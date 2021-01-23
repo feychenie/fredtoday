@@ -1,7 +1,7 @@
 import * as React from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { createClient } from "lib/api/createClient";
-import { POST, LIST_POSTS } from "./index";
+import { POST, LIST_POSTS } from "lib/api/posts";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const client = createClient();

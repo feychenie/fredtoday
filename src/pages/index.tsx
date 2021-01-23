@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { createClient } from "lib/api/createClient";
 import { GetStaticProps } from "next";
 
-import { LIST_POSTS } from "pages/posts";
+import { LIST_POSTS } from "lib/api/posts";
 
 export const getStaticProps: GetStaticProps = async () => {
   const client = createClient();
